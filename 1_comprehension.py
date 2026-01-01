@@ -35,4 +35,15 @@ food_items_inr = {"pasta":100, "pizza":150, "salad":85}
 
 food_items_kurk = {food:price /50  for food, price in food_items_inr.items()}
 
-print(food_items_kurk)
+# print(food_items_kurk)
+
+
+# --------------------------------------------------
+
+# Generators comprehension (basically for memory optimization)
+
+carPrices = [120, 430, 238, 342]
+
+mehengiOnes = sum(one for one in carPrices)
+
+# print(f"{mehengiOnes}")
